@@ -14,8 +14,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     
-    <!-- Google Fonts - Premium Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Halant Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -23,7 +23,7 @@
         }
         
         h1, h2, h3, .display-font {
-            font-family: 'Syne', sans-serif;
+            font-family: 'Inter', serif;
         }
         
         /* Custom Color Palette - Premium Blue & Gold Theme */
@@ -42,8 +42,6 @@
             position: relative;
             overflow: hidden;
         }
-        
-       
         
         @keyframes mesh-move {
             0%, 100% { transform: translate(0, 0) scale(1); }
@@ -258,12 +256,22 @@
         .mobile-menu.active {
             transform: translateX(0);
         }
+
+        /* Highlight text */
+        .highlight {
+            /* background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%); */
+            padding: 0 8px;
+            border-radius: 4px;
+            font-size: bold;
+            font-weight: 700;
+            color: #1f59b8;
+        }
     </style>
 </head>
 <body class="bg-stone-50">
     
     <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="scroll-progress" id="scrollProgress"> </div>
     
     <!-- Navbar with Logo -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
@@ -285,7 +293,7 @@
                     <a href="#about" class="text-gray-700 hover:text-blue-600 transition font-semibold text-sm uppercase tracking-wide">About</a>
                     <a href="#position" class="text-gray-700 hover:text-blue-600 transition font-semibold text-sm uppercase tracking-wide">Position</a>
                     <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition font-semibold text-sm uppercase tracking-wide">Benefits</a>
-                    <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition font-semibold text-sm uppercase tracking-wide">Gallery</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-blue-600 transition font-semibold text-sm uppercase tracking-wide">Environment</a>
                     <a href="#apply" class="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white px-8 py-3 rounded-full font-bold transition transform hover:scale-105 shadow-lg">
                         Apply Now
                     </a>
@@ -308,14 +316,14 @@
                     <a href="#about" class="block text-gray-700 hover:text-blue-600 transition font-semibold">About</a>
                     <a href="#position" class="block text-gray-700 hover:text-blue-600 transition font-semibold">Position</a>
                     <a href="#benefits" class="block text-gray-700 hover:text-blue-600 transition font-semibold">Benefits</a>
-                    <a href="#gallery" class="block text-gray-700 hover:text-blue-600 transition font-semibold">Gallery</a>
+                    <a href="#gallery" class="block text-gray-700 hover:text-blue-600 transition font-semibold">Environment</a>
                     <a href="#apply" class="block bg-orange-500 text-white px-6 py-3 rounded-full font-bold text-center">Apply Now</a>
                 </div>
             </div>
         </div>
     </nav>
     
-    <!-- Hero Section -->
+     <!-- Hero Section -->
     <section class="hero-bg pt-32 pb-8 px-4 relative min-h-screen flex items-center">
  
         <div class="max-w-7xl mx-auto w-full">
@@ -365,10 +373,6 @@
                             <i class="fas fa-paper-plane mr-3 group-hover:rotate-12 transition-transform"></i>
                             Apply for Interview
                         </a>
-                        <a href="tel:+919876543210" class="group bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white px-10 py-5 rounded-full font-bold text-lg text-center transition transform hover:scale-105 shadow-xl flex items-center justify-center">
-                            <i class="fas fa-phone mr-3 group-hover:shake transition-transform"></i>
-                            Call HR Now
-                        </a>
                     </div>
                     
                     <div class="flex flex-wrap gap-6 text-sm stagger-item">
@@ -387,11 +391,11 @@
                     </div>
                 </div>
                 
-                <!-- Right Illustration -->
+                <!-- Right Illustration - Indian Telecaller -->
                 <div class="hidden lg:block float stagger-item">
                     <div class="relative">
                         <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-amber-500/20 rounded-3xl blur-3xl"></div>
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=700&fit=crop" alt="Professional Telecaller" class="relative rounded-3xl shadow-2xl border-4 border-white/20">
+                        <img src="./Image/Hero.png" alt="Indian w-full h-62 Professional Telecaller" class="relative rounded-3xl shadow-2xl" style=" width:100%;">
                     </div>
                 </div>
             </div>
@@ -409,57 +413,90 @@
     <!-- About SS Herbal India -->
     <section id="about" class="py-8 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Left Content -->
+            <div class="grid items-center">
+                <!-- Content -->
                 <div>
-                    <div class="inline-flex items-center bg-blue-50 text-blue-800 px-5 py-2 rounded-full text-sm font-bold mb-6">
+                    <div class="inline-flex items-center bg-blue-50 text-blue-800 px-5 py-2 text-center rounded-full text-sm font-bold mb-6">
                         <i class="fas fa-leaf mr-2"></i>
                         About Our Company
                     </div>
                     
-                    <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font leading-tight">
-                        Welcome to <span class="gradient-text">SS Herbal India</span>
+                    <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-8 display-font leading-tight">
+                        About <span class="gradient-text">SS Herbal India</span>
                     </h2>
                     
-                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                        SS Herbal India is a <strong>trusted name in Ayurvedic wellness products</strong>. We specialize in natural, chemical-free solutions for health issues like ear problems, diabetes, nerve health, digestion, and immunity.
-                    </p>
-                    
-                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        Our mission is to bring the power of Ayurveda to every home in India, helping people live healthier lives naturally through traditional wisdom and modern science.
-                    </p>
-                    
-                   
-                </div>
-                
-                <!-- Right: Product Categories with Images -->
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-white rounded-3xl shadow-xl p-6 text-center benefit-card image-zoom">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=300&h=200&fit=crop" alt="Ear Care" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <i class="fas fa-ear-listen text-blue-600 text-3xl mb-3"></i>
-                        <h3 class="font-bold text-gray-900 mb-2 text-lg">Ear Care</h3>
-                        <p class="text-sm text-gray-600">Natural ear health solutions</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl shadow-xl p-6 text-center benefit-card image-zoom">
-                        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=300&h=200&fit=crop" alt="Diabetes Care" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <i class="fas fa-heartbeat text-blue-600 text-3xl mb-3"></i>
-                        <h3 class="font-bold text-gray-900 mb-2 text-lg">Diabetes Care</h3>
-                        <p class="text-sm text-gray-600">Blood sugar management</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl shadow-xl p-6 text-center benefit-card image-zoom">
-                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=300&h=200&fit=crop" alt="Nerve Health" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <i class="fas fa-brain text-blue-600 text-3xl mb-3"></i>
-                        <h3 class="font-bold text-gray-900 mb-2 text-lg">Nerve Health</h3>
-                        <p class="text-sm text-gray-600">Nervous system support</p>
-                    </div>
-                    
-                    <div class="bg-white rounded-3xl shadow-xl p-6 text-center benefit-card image-zoom">
-                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=300&h=200&fit=crop" alt="Immunity Boost" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <i class="fas fa-shield-virus text-blue-600 text-3xl mb-3"></i>
-                        <h3 class="font-bold text-gray-900 mb-2 text-lg">Immunity Boost</h3>
-                        <p class="text-sm text-gray-600">Strengthen natural defense</p>
+                    <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+                        <p>
+                            SS Herbal India is a <span class="highlight">rapidly growing Ayurvedic wellness brand</span> committed to improving lives through safe, natural, and effective herbal solutions. Established in <span class="highlight">2017</span>, SS Herbal India is rooted in the authentic principles of classical Ayurveda, while being strengthened by modern quality standards, research, and manufacturing excellence.
+                        </p>
+                        
+                        <p>
+                            Our mission is simple yet powerful — to promote <span class="highlight">long-term wellness</span>, not just temporary relief. We develop and offer a wide range of Ayurvedic products designed to address common health concerns faced in everyday life, using time-tested herbal knowledge and scientifically balanced formulations that support the body's natural healing process.
+                        </p>
+
+                        <!-- Our Strength -->
+                        <div class="bg-gradient-to-br from-blue-50 to-amber-50 rounded-3xl p-8 my-8">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6 display-font">Our Strength</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <span class="text-2xl mr-3">🌿</span>
+                                    <span><span class="highlight">100% Ayurvedic & Natural Formulations</span></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-2xl mr-3">🏭</span>
+                                    <span><span class="highlight">State-of-the-art Manufacturing Plant</span> with patented & proprietary formulations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-2xl mr-3">👨‍⚕️</span>
+                                    <span><span class="highlight">1000+ Professionals</span>, including experienced doctors & wellness experts</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-2xl mr-3">🧪</span>
+                                    <span>Strict quality control & <span class="highlight">modern production standards</span></span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-2xl mr-3">🏆</span>
+                                    <span>Awarded <span class="highlight">"Fast Growing Ayurveda Brand in India"</span></span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Pan-India & Global Presence -->
+                        <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-3xl p-8 my-8">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-6 display-font">Pan-India & Global Presence</h3>
+                            <p class="mb-6">
+                                SS Herbal India operates <span class="highlight">Pan-India</span>, serving customers across cities, towns, and rural areas through strong online sales platforms and distribution networks. We currently operate from <span class="highlight">4 major branches</span>:
+                            </p>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                                <div class="bg-white rounded-xl p-4 text-center shadow-md">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+                                    <p class="font-bold">Noida</p>
+                                </div>
+                                <div class="bg-white rounded-xl p-4 text-center shadow-md">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+                                    <p class="font-bold">Faridabad</p>
+                                </div>
+                                <div class="bg-white rounded-xl p-4 text-center shadow-md">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+                                    <p class="font-bold">Delhi</p>
+                                </div>
+                                <div class="bg-white rounded-xl p-4 text-center shadow-md">
+                                    <i class="fas fa-map-marker-alt text-blue-600 text-2xl mb-2"></i>
+                                    <p class="font-bold">Rajasthan</p>
+                                </div>
+                            </div>
+                            <p>
+                                In addition to our national footprint, SS Herbal India is actively working in <span class="highlight">global markets</span>, spreading the power of genuine Indian Ayurveda worldwide.
+                            </p>
+                        </div>
+
+                        <!-- Our Vision -->
+                        <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-3xl p-8 text-white">
+                            <h3 class="text-3xl font-bold mb-4 display-font">Our Vision</h3>
+                            <p class="text-xl leading-relaxed">
+                                To become one of India's most trusted Ayurvedic wellness brands, delivering authentic, effective, and affordable herbal solutions that help people live healthier, balanced lives—naturally.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -565,9 +602,9 @@
                     </div>
                 </div>
                 
-                <!-- Visual Representation -->
+                <!-- Visual Representation - Indian Call Center -->
                 <div class="image-zoom">
-                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1200&h=400&fit=crop" alt="Team Working Together" class="w-full h-80 object-cover rounded-3xl shadow-lg">
+                    <img src="./Image/landscap.jpg" alt="Indian Call Center Team" class="w-full h-100 object-cover rounded-3xl shadow-lg">
                 </div>
             </div>
         </div>
@@ -617,7 +654,7 @@
                         <i class="fas fa-gift text-white text-4xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 display-font">Joining Bonus</h3>
-                    <p class="text-blue-100 mb-2 text-xl font-bold"> ₹5,000</p>
+                    <p class="text-blue-100 mb-2 text-xl font-bold">₹5,000</p>
                     <p class="text-sm text-amber-300 font-semibold">✓ Special Offer</p>
                 </div>
                 
@@ -671,14 +708,14 @@
                     <div class="text-center">
                         <div class="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl relative benefit-card">
                             <i class="fas fa-user text-white text-5xl"></i>
-                            <div class="absolute -top-3 -right-3 bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-lg shadow-xl">
-                                0-3M
+                            <div class="absolute -top-8 -right-16 bg-amber-500 text-white rounded-full w-28 h-14 flex items-center justify-center font-black text-lg shadow-xl">
+                                0 - 3 Month
                             </div>
                         </div>
                         <h3 class="text-3xl font-bold text-gray-900 mb-4 display-font">Telecaller Executive</h3>
                         <p class="text-gray-600 text-lg mb-6">Start your journey with us. Learn products, master communication skills.</p>
                         <div class="image-zoom">
-                            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=400&h=300&fit=crop" alt="Executive" class="rounded-2xl shadow-xl">
+                            <img src="./Image/excutive.jpg" alt="Indian Executive" class="rounded-2xl shadow-xl">
                         </div>
                     </div>
                     
@@ -686,14 +723,14 @@
                     <div class="text-center">
                         <div class="w-32 h-32 bg-gradient-to-br from-blue-600 to-amber-500 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl relative benefit-card">
                             <i class="fas fa-users text-white text-5xl"></i>
-                            <div class="absolute -top-3 -right-3 bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-lg shadow-xl">
-                                6M
+                            <div class="absolute -top-3 -right-16 bg-amber-500 text-white rounded-full w-28 h-14 flex items-center justify-center font-black text-lg shadow-xl">
+                                6 Month
                             </div>
                         </div>
                         <h3 class="text-3xl font-bold text-gray-900 mb-4 display-font">Team Leader</h3>
                         <p class="text-gray-600 text-lg mb-6">Lead a team of 5-10 people. Guide, mentor, and grow together.</p>
                         <div class="image-zoom">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Team Leader" class="rounded-2xl shadow-xl">
+                            <img src="./Image/teamleader1.png" alt="Indian Team Leader" class="rounded-2xl w-full shadow-xl" >
                         </div>
                     </div>
                     
@@ -701,14 +738,14 @@
                     <div class="text-center">
                         <div class="w-32 h-32 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl relative benefit-card">
                             <i class="fas fa-crown text-white text-5xl"></i>
-                            <div class="absolute -top-3 -right-3 bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-black text-lg shadow-xl">
-                                12M
+                            <div class="absolute -top-3 -right-16 bg-amber-500 text-white rounded-full w-28 h-16 flex items-center justify-center font-black text-lg shadow-xl">
+                                12 Month
                             </div>
                         </div>
                         <h3 class="text-3xl font-bold text-gray-900 mb-4 display-font">Manager</h3>
                         <p class="text-gray-600 text-lg mb-6">Manage entire department. Shape company strategy and culture.</p>
                         <div class="image-zoom">
-                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=300&fit=crop" alt="Manager" class="rounded-2xl shadow-xl">
+                            <img src="./Image/manager.jpg" alt="Indian Manager" class="rounded-2xl shadow-xl">
                         </div>
                     </div>
                 </div>
@@ -763,7 +800,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-3xl shadow-2xl p-8 benefit-card">
                             <div class="image-zoom mb-6">
-                                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop" alt="Product Training" class="w-full h-72 object-cover rounded-2xl">
+                                <img src="./Image/training.png" alt="Product Training" class="w-full h-72 object-cover rounded-2xl">
                             </div>
                             <div class="text-center">
                                 <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -779,7 +816,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-3xl shadow-2xl p-8 benefit-card">
                             <div class="image-zoom mb-6">
-                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Sales Training" class="w-full h-72 object-cover rounded-2xl">
+                                <img src="./Image/sales.png" alt="Sales Training" class="w-full h-72 object-cover rounded-2xl">
                             </div>
                             <div class="text-center">
                                 <div class="w-20 h-20 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -795,7 +832,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-3xl shadow-2xl p-8 benefit-card">
                             <div class="image-zoom mb-6">
-                                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop" alt="Leadership Training" class="w-full h-72 object-cover rounded-2xl">
+                                <img src="./Image/leadershipt.png" alt="Leadership Training" class="w-full h-72 object-cover rounded-2xl">
                             </div>
                             <div class="text-center">
                                 <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -811,7 +848,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-3xl shadow-2xl p-8 benefit-card">
                             <div class="image-zoom mb-6">
-                                <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=600&h=400&fit=crop" alt="Computer Training" class="w-full h-72 object-cover rounded-2xl">
+                                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop" alt="Computer Training" class="w-full h-72 object-cover rounded-2xl">
                             </div>
                             <div class="text-center">
                                 <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -827,7 +864,7 @@
                     <div class="swiper-slide">
                         <div class="bg-white rounded-3xl shadow-2xl p-8 benefit-card">
                             <div class="image-zoom mb-6">
-                                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop" alt="Skill Development" class="w-full h-72 object-cover rounded-2xl">
+                                <img src="./Image/certified.png" alt="Skill Development" class="w-full h-72 object-cover rounded-2xl">
                             </div>
                             <div class="text-center">
                                 <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-rose-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
@@ -843,45 +880,6 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Brand Ambassador Section -->
-    <section class="py-8 px-4 bg-gradient-to-br from-blue-50 via-white to-amber-50">
-        <div class="max-w-6xl mx-auto">
-            <div class="bg-white rounded-3xl shadow-2xl p-12 md:p-16">
-                <div class="text-center mb-12">
-                    <!-- Brand Ambassador Image -->
-                    <div class="mb-10">
-                        <div class="relative inline-block">
-                            <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-amber-500 rounded-full blur-2xl opacity-30"></div>
-                            <img src="./Image/Deepak.png" alt="Deepak Jailor - Brand Ambassador" class="relative w-56 h-56 rounded-full mx-auto shadow-2xl border-8 border-white object-cover benefit-card" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop';">
-                        </div>
-                    </div>
-                    
-                    <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font">
-                        Brand Ambassador: <span class="gradient-text">Deepak Jailor</span>
-                    </h2>
-                    <p class="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                        SS Herbal India is backed by renowned Ayurvedic experts and has transformed the lives of over <strong class="text-blue-600">1 Lac+ customers</strong> across India through natural health solutions.
-                    </p>
-                </div>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center benefit-card">
-                        <div class="text-5xl font-black text-blue-600 mb-3 display-font">1 Lac+</div>
-                        <p class="text-gray-700 font-bold text-lg">Happy Customers</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 text-center benefit-card">
-                        <div class="text-5xl font-black text-amber-600 mb-3 display-font">15+</div>
-                        <p class="text-gray-700 font-bold text-lg">Years Experience</p>
-                    </div>
-                    <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center benefit-card">
-                        <div class="text-5xl font-black text-green-600 mb-3 display-font">700+</div>
-                        <p class="text-gray-700 font-bold text-lg">Team Members</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -964,7 +962,7 @@
             
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=500&fit=crop" alt="Modern Office" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/office.png" alt="Modern Office" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Modern Office Space</h3>
@@ -973,7 +971,7 @@
                 </div>
                 
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=500&fit=crop" alt="Team Meeting" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/support.png" alt="Team Meeting" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Team Collaboration</h3>
@@ -982,7 +980,7 @@
                 </div>
                 
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&h=500&fit=crop" alt="Training Session" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/session.png" alt="Training Session" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Training Sessions</h3>
@@ -991,7 +989,7 @@
                 </div>
                 
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500&h=500&fit=crop" alt="Team Celebration" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/celebration.png" alt="Team Celebration" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Team Celebrations</h3>
@@ -1000,7 +998,7 @@
                 </div>
                 
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&h=500&fit=crop" alt="Professional Growth" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/career.png" alt="Professional Growth" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Career Growth</h3>
@@ -1009,7 +1007,7 @@
                 </div>
                 
                 <div class="relative overflow-hidden rounded-3xl group benefit-card">
-                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=500&fit=crop" alt="Work Culture" class="w-full h-96 object-cover group-hover:scale-110 transition duration-700">
+                    <img src="./Image/positive.png" alt="Work Culture" class="w-full h-72 object-cover group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-70"></div>
                     <div class="absolute bottom-8 left-8 text-white z-10">
                         <h3 class="text-2xl font-bold mb-2 display-font">Positive Culture</h3>
@@ -1163,10 +1161,6 @@
             <div class="mt-16 text-center text-white">
                 <p class="text-2xl mb-8 font-bold">Or contact us directly:</p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                    <a href="tel:+919876543210" class="flex items-center justify-center bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-2xl px-8 py-5 hover:bg-white/20 transition benefit-card">
-                        <i class="fas fa-phone text-3xl mr-4"></i>
-                        <span class="text-xl font-bold">+91 98765 43210</span>
-                    </a>
                     <a href="mailto:careers@ssherbal.com" class="flex items-center justify-center bg-white/10 backdrop-blur-md border-2 border-white/20 rounded-2xl px-8 py-5 hover:bg-white/20 transition benefit-card">
                         <i class="fas fa-envelope text-3xl mr-4"></i>
                         <span class="text-xl font-bold">careers@ssherbal.com</span>
@@ -1183,7 +1177,7 @@
                 <!-- About -->
                 <div>
                     <h3 class="text-3xl font-bold mb-6 flex items-center display-font">
-                        <img src="./Image/logo.png" alt="SS Herbal India Logo" class="h-16 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <img src="./Image/logo.png" alt="SS Herbal India Logo" class="h-16 w-auto object-contain mr-3" onerror="this.style.display='none';">
                         SS Herbal India
                     </h3>
                     <p class="text-gray-400 text-lg leading-relaxed">
@@ -1291,7 +1285,7 @@
             const data = Object.fromEntries(formData);
             
             // Show success message
-            document.getElementById('successMessage').style.display = 'block';
+          
             
             // Hide form
             this.style.display = 'none';
