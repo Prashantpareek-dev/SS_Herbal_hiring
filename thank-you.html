@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - SS Herbal India | Application Received</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    
+    <!-- Google Fonts - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Success Animation */
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .success-icon {
+            animation: scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .delay-3 { animation-delay: 0.6s; opacity: 0; }
+        .delay-4 { animation-delay: 0.8s; opacity: 0; }
+        
+        /* Pulse Effect for Icon */
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        .pulse-ring {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        /* Confetti Animation */
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            animation: confetti-fall 3s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-orange-50 min-h-screen">
+    
+    <!-- Confetti Elements -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="confetti bg-blue-500 rounded-full" style="left: 10%; animation-delay: 0s;"></div>
+        <div class="confetti bg-orange-500 rounded-full" style="left: 20%; animation-delay: 0.5s;"></div>
+        <div class="confetti bg-blue-400 rounded-full" style="left: 30%; animation-delay: 1s;"></div>
+        <div class="confetti bg-orange-400 rounded-full" style="left: 40%; animation-delay: 1.5s;"></div>
+        <div class="confetti bg-blue-600 rounded-full" style="left: 50%; animation-delay: 2s;"></div>
+        <div class="confetti bg-orange-600 rounded-full" style="left: 60%; animation-delay: 0.3s;"></div>
+        <div class="confetti bg-blue-500 rounded-full" style="left: 70%; animation-delay: 0.8s;"></div>
+        <div class="confetti bg-orange-500 rounded-full" style="left: 80%; animation-delay: 1.3s;"></div>
+        <div class="confetti bg-blue-400 rounded-full" style="left: 90%; animation-delay: 1.8s;"></div>
+    </div>
+  
+    
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8 md:py-16 relative z-10">
+        
+        <!-- Success Icon -->
+        <div class="text-center mb-8 md:mb-12 relative">
+            <!-- Pulsing Rings -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-32 h-32 md:w-40 md:h-40 bg-blue-500 rounded-full pulse-ring opacity-30"></div>
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center" style="animation-delay: 1s;">
+                <div class="w-32 h-32 md:w-40 md:h-40 bg-orange-500 rounded-full pulse-ring opacity-30"></div>
+            </div>
+            
+            <!-- Success Icon -->
+            <div class="relative inline-flex items-center justify-center w-32 h-32 md:w-40 md:h-40 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full shadow-2xl success-icon">
+                <i class="fas fa-check text-white text-6xl md:text-7xl"></i>
+            </div>
+        </div>
+        
+        <!-- Main Card -->
+        <div class="bg-white rounded-3xl shadow-2xl p-6 md:p-12 border-t-4 border-blue-600">
+            
+            <!-- Thank You Section -->
+            <div class="text-center mb-10 md:mb-12 fade-in-up delay-1">
+                <div class="inline-flex items-center justify-center bg-gradient-to-r from-blue-100 to-orange-100 text-blue-700 px-6 py-3 rounded-full text-sm font-bold mb-6 shadow-md">
+                    <i class="fas fa-check-circle text-orange-500 mr-2"></i>
+                    APPLICATION SUBMITTED SUCCESSFULLY
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
+                    🎉 Thank You!
+                </h1>
+                
+                <h2 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-600 to-orange-500 bg-clip-text text-transparent mb-6">
+                    Your Application Has Been Received
+                </h2>
+                
+                <div class="max-w-2xl mx-auto bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl p-6 md:p-8 border-2 border-blue-200">
+                    <p class="text-lg md:text-xl text-gray-800 leading-relaxed">
+                        Thank you for your interest in joining <strong class="text-blue-600">SS Herbal India</strong> as a <strong class="text-orange-500">Telecaller</strong>.<br/>
+                        <span class="text-2xl md:text-3xl font-bold text-blue-600 block mt-4">📞 Our HR team will contact you within 24 hours!</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t-2 border-blue-100 my-8 md:my-12"></div>
+            
+            <!-- What Happens Next Section -->
+            <div class="mb-10 md:mb-12 fade-in-up delay-2">
+                <div class="flex items-center justify-center md:justify-start mb-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                        <i class="fas fa-phone-volume text-white text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        What Happens Next?
+                    </h2>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-8 md:p-10 shadow-2xl text-white">
+                    <p class="text-xl md:text-2xl font-bold mb-8">
+                        <i class="fas fa-clock text-orange-400 mr-2"></i>
+                        Within the next 24 hours:
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition">
+                            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mr-5 flex-shrink-0 shadow-lg">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">1. HR Will Call You</h3>
+                                <p class="text-blue-100 text-lg">
+                                    Our HR executive will call you on <strong class="text-orange-300">the mobile number you provided</strong> to discuss the opportunity
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition">
+                            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mr-5 flex-shrink-0 shadow-lg">
+                                <i class="fas fa-info-circle text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">2. Job Details Explained</h3>
+                                <p class="text-blue-100 text-lg">
+                                    Clear explanation of <strong class="text-orange-300">role, responsibilities, and next steps</strong>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-orange-500 rounded-2xl border-2 border-orange-400 shadow-xl">
+                        <p class="text-xl md:text-2xl font-bold text-white text-center">
+                            <i class="fas fa-bell mr-2"></i>
+                            Please keep your phone available!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t-2 border-orange-100 my-8 md:my-12"></div>
+            
+            <!-- Important Instructions -->
+            <div class="mb-10 md:mb-12 fade-in-up delay-3">
+                <div class="flex items-center justify-center md:justify-start mb-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
+                        <i class="fas fa-exclamation-triangle text-white text-3xl"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                        Important Instructions
+                    </h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Card 1 -->
+                    <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border-2 border-orange-200 shadow-lg transform hover:scale-105 transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-mobile-alt text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Keep Phone Ready</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg">
+                            Make sure your <strong class="text-orange-600">mobile phone is switched on and reachable</strong> for the next 24-48 hours
+                        </p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border-2 border-blue-200 shadow-lg transform hover:scale-105 transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-slash text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Answer Unknown Calls</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg">
+                            Don't ignore calls from <strong class="text-blue-600">unknown or unregistered numbers</strong> — it could be our HR team
+                        </p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border-2 border-orange-200 shadow-lg transform hover:scale-105 transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-file-alt text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Keep Documents Ready</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg">
+                            Have your basic <strong class="text-orange-600">ID proof and education certificates</strong> handy (if needed)
+                        </p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 border-2 border-blue-200 shadow-lg transform hover:scale-105 transition">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-question-circle text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900">Ask Questions</h3>
+                        </div>
+                        <p class="text-gray-700 text-lg">
+                            Feel free to ask any questions about the job, salary, or <strong class="text-blue-600">work environment</strong> during the call
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-gradient-to-r from-blue-600 to-orange-500 rounded-2xl text-white text-center shadow-2xl">
+                    <p class="text-xl md:text-2xl font-bold">
+                        <i class="fas fa-heart mr-2"></i>
+                        All information will be explained step-by-step by our friendly HR team
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t-2 border-blue-100 my-8 md:my-12"></div>
+            
+            <!-- Didn't Receive Call Section -->
+            <div class="text-center fade-in-up delay-4">
+                <div class="bg-gradient-to-br from-blue-600 to-orange-500 rounded-3xl p-8 md:p-10 text-white shadow-2xl">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+                        <i class="fas fa-clock text-blue-600 text-3xl"></i>
+                    </div>
+                    
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                        🔔 Didn't receive a call within 24 hours?
+                    </h3>
+                    
+                    <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
+                        Please be patient! Our team handles many applications daily. We'll definitely contact you soon. Thank you for your understanding.
+                    </p>
+                    
+                    <div class="mt-6 inline-flex items-center bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full">
+                        <i class="fas fa-info-circle text-orange-300 mr-3 text-xl"></i>
+                        <span class="text-white font-semibold">Your application is important to us</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-900 to-blue-800 text-white py-8 md:py-10 mt-16 md:mt-20 relative z-10">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="./Image/logo.png" class="w-16" alt="">
+                    <span class="text-2xl md:text-3xl font-bold">SS Herbal India</span>
+                </div>
+                <p class="text-blue-200 text-base md:text-lg mb-4">
+                    Your journey to a better career starts here
+                </p>
+                <div class="border-t border-blue-700 pt-6">
+                    <p class="text-blue-300 text-sm md:text-base">
+                        © 2026 <strong>SS Herbal India</strong>. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
