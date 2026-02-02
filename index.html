@@ -43,20 +43,7 @@
             overflow: hidden;
         }
         
-        /* Animated Gradient Mesh */
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 40% 90%, rgba(99, 102, 241, 0.08) 0%, transparent 50%);
-            animation: mesh-move 20s ease-in-out infinite;
-        }
+       
         
         @keyframes mesh-move {
             0%, 100% { transform: translate(0, 0) scale(1); }
@@ -329,17 +316,8 @@
     </nav>
     
     <!-- Hero Section -->
-    <section class="hero-bg pt-32 pb-24 px-4 relative min-h-screen flex items-center">
-        <!-- Floating Particles -->
-        <div class="particle" style="width: 3px; height: 3px; left: 10%; animation-duration: 15s;"></div>
-        <div class="particle" style="width: 4px; height: 4px; left: 20%; animation-duration: 20s; animation-delay: 2s;"></div>
-        <div class="particle" style="width: 2px; height: 2px; left: 30%; animation-duration: 25s; animation-delay: 4s;"></div>
-        <div class="particle" style="width: 5px; height: 5px; left: 40%; animation-duration: 18s; animation-delay: 1s;"></div>
-        <div class="particle" style="width: 3px; height: 3px; left: 60%; animation-duration: 22s; animation-delay: 3s;"></div>
-        <div class="particle" style="width: 4px; height: 4px; left: 70%; animation-duration: 19s; animation-delay: 5s;"></div>
-        <div class="particle" style="width: 2px; height: 2px; left: 80%; animation-duration: 24s;"></div>
-        <div class="particle" style="width: 5px; height: 5px; left: 90%; animation-duration: 21s; animation-delay: 2s;"></div>
-        
+    <section class="hero-bg pt-32 pb-8 px-4 relative min-h-screen flex items-center">
+ 
         <div class="max-w-7xl mx-auto w-full">
             <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
                 <!-- Left Content -->
@@ -396,7 +374,7 @@
                     <div class="flex flex-wrap gap-6 text-sm stagger-item">
                         <div class="flex items-center bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
                             <i class="fas fa-check-circle text-green-400 mr-2 text-lg"></i>
-                            <span class="text-white font-semibold">Male & Female Welcome</span>
+                            <span class="text-white font-semibold">Welcoming Male & Female</span>
                         </div>
                         <div class="flex items-center bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20">
                             <i class="fas fa-check-circle text-green-400 mr-2 text-lg"></i>
@@ -429,7 +407,7 @@
     </section>
     
     <!-- About SS Herbal India -->
-    <section id="about" class="py-24 px-4 bg-white">
+    <section id="about" class="py-8 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <!-- Left Content -->
@@ -503,7 +481,7 @@
     </section>
     
     <!-- Position Details -->
-    <section id="position" class="py-24 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="position" class="py-8 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-4 display-font">
@@ -610,7 +588,7 @@
     </section>
     
     <!-- What We Offer -->
-    <section id="benefits" class="py-24 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
+    <section id="benefits" class="py-8 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
@@ -633,7 +611,7 @@
                         <i class="fas fa-money-bill-wave text-white text-4xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 display-font">Attractive Salary</h3>
-                    <p class="text-blue-100 mb-2 text-xl font-bold">₹12,000 - ₹15,000/month</p>
+                    <p class="text-blue-100 mb-2 text-xl font-bold">₹12,000 - ₹25,000/month</p>
                     <p class="text-sm text-amber-300 font-semibold">✓ From Day One</p>
                 </div>
                 
@@ -643,7 +621,7 @@
                         <i class="fas fa-trophy text-white text-4xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 display-font">Incentives</h3>
-                    <p class="text-blue-100 mb-2 text-xl font-bold">Up to ₹10,000+/month</p>
+                    <p class="text-blue-100 mb-2 text-xl font-bold">Up to ₹15,000+/month</p>
                     <p class="text-sm text-amber-300 font-semibold">✓ Performance Based</p>
                 </div>
                 
@@ -653,7 +631,7 @@
                         <i class="fas fa-gift text-white text-4xl"></i>
                     </div>
                     <h3 class="text-2xl font-bold mb-3 display-font">Joining Bonus</h3>
-                    <p class="text-blue-100 mb-2 text-xl font-bold">₹2,000 - ₹5,000</p>
+                    <p class="text-blue-100 mb-2 text-xl font-bold"> ₹5,000</p>
                     <p class="text-sm text-amber-300 font-semibold">✓ Special Offer</p>
                 </div>
                 
@@ -687,7 +665,7 @@
     </section>
     
     <!-- Career Growth -->
-    <section class="py-24 px-4 bg-white">
+    <section class="py-8 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font">
@@ -781,7 +759,7 @@
     </section>
     
     <!-- Training Section with Swiper -->
-    <section class="py-24 px-4 bg-gradient-to-b from-gray-50 to-white">
+    <section class="py-8 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font">
@@ -884,7 +862,7 @@
     </section>
     
     <!-- Brand Ambassador Section -->
-    <section class="py-24 px-4 bg-gradient-to-br from-blue-50 via-white to-amber-50">
+    <section class="py-8 px-4 bg-gradient-to-br from-blue-50 via-white to-amber-50">
         <div class="max-w-6xl mx-auto">
             <div class="bg-white rounded-3xl shadow-2xl p-12 md:p-16">
                 <div class="text-center mb-12">
@@ -900,13 +878,13 @@
                         Brand Ambassador: <span class="gradient-text">Deepak Jailor</span>
                     </h2>
                     <p class="text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-                        SS Herbal India is backed by renowned Ayurvedic experts and has transformed the lives of over <strong class="text-blue-600">50,000+ customers</strong> across India through natural health solutions.
+                        SS Herbal India is backed by renowned Ayurvedic experts and has transformed the lives of over <strong class="text-blue-600">1 Lac+ customers</strong> across India through natural health solutions.
                     </p>
                 </div>
                 
                 <div class="grid md:grid-cols-3 gap-8">
                     <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 text-center benefit-card">
-                        <div class="text-5xl font-black text-blue-600 mb-3 display-font">50,000+</div>
+                        <div class="text-5xl font-black text-blue-600 mb-3 display-font">1 Lac+</div>
                         <p class="text-gray-700 font-bold text-lg">Happy Customers</p>
                     </div>
                     <div class="bg-gradient-to-br from-amber-50 to-amber-100 rounded-2xl p-8 text-center benefit-card">
@@ -914,7 +892,7 @@
                         <p class="text-gray-700 font-bold text-lg">Years Experience</p>
                     </div>
                     <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-8 text-center benefit-card">
-                        <div class="text-5xl font-black text-green-600 mb-3 display-font">100+</div>
+                        <div class="text-5xl font-black text-green-600 mb-3 display-font">700+</div>
                         <p class="text-gray-700 font-bold text-lg">Team Members</p>
                     </div>
                 </div>
@@ -923,7 +901,7 @@
     </section>
     
     <!-- Why Join SS Herbal -->
-    <section class="py-24 px-4 bg-white">
+    <section class="py-8 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font">
@@ -987,7 +965,7 @@
     </section>
     
     <!-- Gallery Section -->
-    <section id="gallery" class="py-24 px-4 bg-gradient-to-b from-gray-50 to-white">
+    <section id="gallery" class="py-8 px-4 bg-gradient-to-b from-gray-50 to-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-20">
                 <h2 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 display-font">
@@ -1057,7 +1035,7 @@
     </section>
     
     <!-- Application Form -->
-    <section id="apply" class="py-24 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
+    <section id="apply" class="py-8 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 opacity-5">
             <div class="absolute inset-0" style="background-image: radial-gradient(circle, white 1px, transparent 1px); background-size: 30px 30px;"></div>
@@ -1126,6 +1104,10 @@
                             <label class="flex items-center cursor-pointer group">
                                 <input type="radio" name="gender" value="female" required class="mr-3 w-6 h-6 text-blue-600">
                                 <span class="text-lg font-semibold group-hover:text-blue-600 transition">Female</span>
+                            </label>
+                            <label class="flex items-center cursor-pointer group">
+                                <input type="radio" name="gender" value="Other" required class="mr-3 w-6 h-6 text-blue-600">
+                                <span class="text-lg font-semibold group-hover:text-blue-600 transition">Other</span>
                             </label>
                         </div>
                     </div>
@@ -1209,13 +1191,14 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-16 px-4">
+    <footer class="bg-gray-900 text-white py-8 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-3 gap-12 mb-12">
                 <!-- About -->
                 <div>
                     <h3 class="text-3xl font-bold mb-6 flex items-center display-font">
-                        <i class="fas fa-leaf text-blue-400 mr-3"></i>SS Herbal India
+                        <img src="./Image/logo.png" alt="SS Herbal India Logo" class="h-16 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        SS Herbal India
                     </h3>
                     <p class="text-gray-400 text-lg leading-relaxed">
                         Leading Ayurvedic wellness company committed to natural health solutions for a better life.
